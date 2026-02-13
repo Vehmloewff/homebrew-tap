@@ -1,29 +1,27 @@
 class Interactor < Formula
   desc "Browser interactor CLI powered by Playwright"
   homepage "https://github.com/vehmloewff/interactor"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vehmloewff/interactor/releases/download/0.1.4/interactor-0.1.4-darwin-arm64.tar.gz"
-      sha256 "b7e6973403db5a3154a40940a325284966fc8a33150b352f61e6ddb11a090189"
+      url "https://github.com/vehmloewff/interactor/releases/download/0.1.5/interactor-0.1.5-darwin-arm64.tar.gz"
+      sha256 "7d160ba56ff8f5d0446d64c4fe5e26bac51d3b9275d34bdacb98b5f968b84fb4"
     else
-      url "https://github.com/vehmloewff/interactor/releases/download/0.1.4/interactor-0.1.4-darwin-x64.tar.gz"
-      sha256 "edb8aaa60c83ef01e65e5237ca6e86e29c260ca68877bab5482872e6fc999464"
+      url "https://github.com/vehmloewff/interactor/releases/download/0.1.5/interactor-0.1.5-darwin-x64.tar.gz"
+      sha256 "6cf3f43c984c3dae90688a237004c07d7a480fe791adebbe9579c466c567abd2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vehmloewff/interactor/releases/download/0.1.4/interactor-0.1.4-linux-arm64.tar.gz"
-      sha256 "f3e5f21a0e0932894b16177f43d726382f70a271391fbcbad00acda133be76c0"
+      url "https://github.com/vehmloewff/interactor/releases/download/0.1.5/interactor-0.1.5-linux-arm64.tar.gz"
+      sha256 "dd58d068484cef24d5bbf54ff5ba43bb492e6e5b35f5d1e6ca1e9ca1d8262e98"
     else
-      url "https://github.com/vehmloewff/interactor/releases/download/0.1.4/interactor-0.1.4-linux-x64.tar.gz"
-      sha256 "46cfb13f7222307e50f23eee7689b5760ca595087974f9bd8c9736fe615d557a"
+      url "https://github.com/vehmloewff/interactor/releases/download/0.1.5/interactor-0.1.5-linux-x64.tar.gz"
+      sha256 "605368eaedc16ebeddc243dd372ba5694a8cf6b1dc99bf78427da83419de3fa2"
     end
   end
-
-  depends_on "oven-sh/bun/bun"
 
   def install
     bin.install "interactor"
